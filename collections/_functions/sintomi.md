@@ -1,9 +1,8 @@
 ---
-layout: post
 title: SINTOMI
 description: Definisci i tuoi sintomi
-# image: assets/images/pic04.jpg
 image: assets/images/sintomi1.jpg
+ref: sintomi
 ---
 
 A volte i sintomi sono difficili da descrivere anche se siamo madrelingua. Abbiamo

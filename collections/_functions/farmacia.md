@@ -1,9 +1,8 @@
 ---
-layout: post
 title: IN FARMACIA
 description: Carica foto e profilo dei tuoi farmaci per comunicare più facilmente.
-# image: assets/images/pic03.jpg
 image: assets/images/farmacia1.jpg
+ref: farmacia
 ---
 
 Le tipologie di farmaci possono variare da paese a paese e questo potrebbe rendere

@@ -1,28 +1,17 @@
-<section id="one" class="tiles">
-  {% for post in site.posts limit:site.tiles-count %}
-  {% if site.tiles-source == 'posts' %}
-  <article>
+<section id="tile" class="tiles">
+    {% for feature in site.functions %}
+    <article id="{{ feature.ref }}" style="width: 100%" class="12u(xxsmall)">
     <span class="image">
-      <img src="{{ post.image }}" alt="" />
+       <img src="{{ feature.image }}" alt=""/>
     </span>
-    <header class="major">
-      <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
-      <p>{{ post.description }}</p>
-    </header>
-  </article>
-  {% endif %}
-  {% endfor %}
-  {% for page in site.pages limit:site.tiles-count %}
-  {% if site.tiles-source == 'pages' and page.show_tile != false %}
-  <article>
-    <span class="image">
-      <img src="{{ page.image }}" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="{{ page.url | relative_url  }}" class="link">{{ page.title }}</a></h3>
-      <p>{{ page.description }}</p>
-    </header>
-  </article>
-  {% endif %}
-  {% endfor %}
+        <header>
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.description }}</p>
+            <details>
+                <summary>Dimmi di più</summary>
+                <p> {{ feature.content }}</p>
+            </details>
+        </header>
+    </article>
+    {% endfor %}
 </section>
